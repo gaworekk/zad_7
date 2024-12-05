@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/naglowek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Wydarzenie w Sudetach"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        app:srcCompat="@drawable/widok" />
+
+    <TextView
+        android:id="@+id/polubienia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="right"
+        android:text="0 polubień" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/del"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:text="usuń"
+        android:backgroundTint="#aaabfa"
+        />
+
+    <Button
+        android:id="@+id/dod"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:text="polub"
+        android:backgroundTint="#aaabfa"
+        />
+
+
+
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Podaj email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/haslo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Podaj hasło"
+        android:inputType="text|textPassword" />
+
+    <EditText
+        android:id="@+id/phaslo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Powtórz hasło"
+        android:inputType="text|textPassword" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="zapisz" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="zobacz uczestnika" />
+
+    <TextView
+        android:id="@+id/obsz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Obszar komunikatów" />
+    <TextView
+        android:id="@+id/wys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="" />
+
+
+
+</LinearLayout>
