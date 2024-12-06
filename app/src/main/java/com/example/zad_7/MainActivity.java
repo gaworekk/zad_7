@@ -91,7 +91,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String input_email=mail.getText().toString().trim();
-                wys.setText(input_email);
+                if(input_email.isEmpty()){
+                    wys.setText("Nie podano emaila");
+                }else {
+                    wys.setText(input_email);
+                }
             }
         });
     }
